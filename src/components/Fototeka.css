@@ -1,0 +1,41 @@
+.fototeka-container {
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 8rem auto;
+  padding: 20px;
+  text-align: center;
+  background: #0da2ff21;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.fototeka-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+.fototeka-slider {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.fototeka-image {
+  max-width: 100%;
+  width: auto;
+  max-height: 650px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .fototeka-container {
+    margin: 6rem auto;
+  }
+  .fototeka-image {
+    object-fit: cover;
+    width: 100%;
+    max-height: auto;
+    height: 500px;
+  }
+}

@@ -1,0 +1,388 @@
+/* .NavbarItems {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  width: 95%;
+  height: 80px;
+  border-radius: 10px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 9999;
+}
+.navbar-logo {
+  color: #222;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.navbar-logo span {
+  margin: 0 1rem;
+}
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  align-items: center;
+}
+.nav-links {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-links svg {
+  margin-right: 10px;
+}
+.nav-links:hover {
+  background: #01959a;
+  color: #fff;
+  border-radius: 4px;
+}
+.nav-links-mobile {
+  display: none;
+}
+button {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Kavivanar", cursive;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background: #151516;
+  color: #fff;
+}
+.menu-icons {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo span {
+    font-size: 1.2rem;
+  }
+  .NavbarItems {
+    z-index: 99;
+  }
+  .menu-icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: #222;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    right: 0;
+    background: #fff;
+    opacity: 0;
+    padding: 80px 0 30px 0;
+    margin: 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  .nav-menu.active {
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-links {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 2rem 0;
+  }
+  .nav-links:hover {
+    background: #01959a;
+    color: #fff;
+    transition: none;
+  }
+  button {
+    display: none;
+  }
+  .nav-links-mobile {
+    display: block;
+    padding: 1.5rem;
+    margin: auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #01959a;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+} */
+.NavbarItems {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  width: 95%;
+  height: 80px;
+  border-radius: 10px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 9999;
+}
+
+.navbar-logo {
+  color: #222;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo span {
+  margin: 0 1rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-links svg {
+  margin-right: 10px;
+}
+
+.nav-links:hover {
+  background: #01959a;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Kavivanar", cursive;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #151516;
+  color: #fff;
+}
+
+.menu-icons {
+  display: none;
+}
+
+/* Styles for the submenu */
+.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  /* padding: 10px 0; */
+  margin: 0;
+  /* border-radius: 5px; */
+  z-index: 9999;
+  width: 100%;
+}
+
+.submenu-active {
+  display: block;
+}
+
+/* .submenu li {
+  padding: 8px 20px;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1rem;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.submenu li a:hover {
+  background: #01959a;
+  color: #fff;
+  border-radius: 4px;
+} */
+.submenu li {
+  padding: 0;
+}
+
+.submenu li a {
+  display: block;
+  padding: 8px 20px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.submenu li a:hover {
+  background: #01959a;
+  color: #fff;
+  /* border-radius: 0; */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-logo span {
+    font-size: 1.2rem;
+  }
+
+  .NavbarItems {
+    z-index: 99;
+  }
+
+  .menu-icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: #222;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    right: 0;
+    background: #fff;
+    opacity: 0;
+    padding: 80px 0 30px 0;
+    margin: 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-links {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 2rem 0;
+  }
+
+  .nav-links:hover {
+    background: #01959a;
+    color: #fff;
+    transition: none;
+  }
+
+  .submenu {
+    position: static;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .submenu li {
+    padding: 0;
+  }
+
+  .submenu li a {
+    font-size: 1.2rem;
+    /* padding: 10px; */
+  }
+
+  button {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    padding: 1.5rem;
+    margin: auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #01959a;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+}

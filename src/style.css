@@ -1,0 +1,27 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Kavivanar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap"); */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+  /* font-family: "Alata", cursive; */
+  /* font-family: "Dancing Script", cursive; */
+  /* font-family: "Kavivanar", cursive; */
+  /* font-family: "Merriweather", serif; */
+  /* font-family: "Rochester", cursive; */
+  /* font-family: "Sacramento", cursive; */
+  /* font-family: "Ubuntu", sans-serif; */
+  /* font-family: "Quicksand", sans-serif; */
+  font-family: "Noto Sans", sans-serif;
+}
