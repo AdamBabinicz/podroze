@@ -11,7 +11,7 @@ function Kontakt() {
       <Hero
         cName="hero-mid"
         heroImg={contactImg}
-        title="Service"
+        title="Kontakt"
         btnClass="hide"
       />
       <KontaktForm />
