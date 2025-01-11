@@ -18,7 +18,7 @@ function KontaktForm() {
       };
 
       // Przesłanie wiadomości
-      const mailtoLink = `mailto:example@example.com?subject=${encodeURIComponent(
+      const mailtoLink = `mailto:puaro@vp.pl?subject=${encodeURIComponent(
         temat
       )}&body=${encodeURIComponent(wiadomosc)}%0A%0AEmail: ${encodeURIComponent(
         email
