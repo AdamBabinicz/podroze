@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer">
       <div className="top">
         <div>
-          <h2>Podróże egzotyczne</h2>
+          <h4>Podróże egzotyczne</h4>
           <p>Podróże nie tylko kształcą</p>
         </div>
         <div>

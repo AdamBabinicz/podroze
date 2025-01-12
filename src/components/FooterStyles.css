@@ -15,6 +15,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.top h4 {
+  font-size: 1.4rem;
+}
 .top svg {
   color: #fff;
   font-size: 2rem;
