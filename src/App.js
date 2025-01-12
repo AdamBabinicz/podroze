@@ -40,6 +40,8 @@ export default function App() {
         buttonText="Zgadzam się"
         declineButtonText="Nie zgadzam się"
         cookieName="myCookieConsent"
+        aria-label="Zgadzam się na pliki cookies"
+        declineAriaLabel="Nie zgadzam się na pliki cookies"
       >
         Nasza strona używa plików cookies w&nbsp;celu zapewnienia lepszej
         funkcjonalności, personalizacji treści oraz analizy ruchu na stronie.
