@@ -14,7 +14,6 @@
   transform: translate(-50%);
   z-index: 9999;
 }
-
 .navbar-logo {
   color: #222;
   font-size: 2rem;
@@ -22,11 +21,9 @@
   display: flex;
   align-items: center;
 }
-
 .navbar-logo span {
   margin: 0 1rem;
 }
-
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(6, auto);
@@ -34,7 +31,6 @@
   list-style: none;
   align-items: center;
 }
-
 .nav-links {
   text-decoration: none;
   color: #222;
@@ -47,47 +43,38 @@
   align-items: center;
   cursor: pointer;
 }
-
 .nav-links svg {
   margin-right: 10px;
 }
-
 .nav-links:hover {
   background: #01959a;
   color: #fff;
   border-radius: 4px;
 }
-
 .nav-links-mobile {
   display: none;
 }
-
 button {
   padding: 0.5rem 1rem;
   white-space: nowrap;
   border-radius: 0.3rem;
   font-size: 1rem;
   font-weight: 600;
-  font-family: "Kavivanar", cursive;
+  font-family: "Noto Sans", sans-serif;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-
 button:hover {
   background: #151516;
   color: #fff;
 }
-
 .menu-icons {
   display: none;
 }
-
-/* Styles for the submenu */
 .has-submenu {
   position: relative;
 }
-
 .submenu {
   display: none;
   position: absolute;
@@ -96,38 +83,16 @@ button:hover {
   background: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   list-style: none;
-  /* padding: 10px 0; */
   margin: 0;
-  /* border-radius: 5px; */
   z-index: 9999;
   width: 100%;
 }
-
 .submenu-active {
   display: block;
 }
-
-/* .submenu li {
-  padding: 8px 20px;
-}
-
-.submenu li a {
-  text-decoration: none;
-  color: #222;
-  font-size: 1rem;
-  display: block;
-  transition: all 0.3s ease-in-out;
-}
-
-.submenu li a:hover {
-  background: #01959a;
-  color: #fff;
-  border-radius: 4px;
-} */
 .submenu li {
   padding: 0;
 }
-
 .submenu li a {
   display: block;
   padding: 8px 20px;
@@ -137,23 +102,17 @@ button:hover {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
-
 .submenu li a:hover {
   background: #01959a;
   color: #fff;
-  /* border-radius: 0; */
 }
-
-/* Responsive styles */
 @media (max-width: 768px) {
   .navbar-logo span {
     font-size: 1.2rem;
   }
-
   .NavbarItems {
     z-index: 99;
   }
-
   .menu-icons {
     display: flex;
     align-items: center;
@@ -161,11 +120,9 @@ button:hover {
     font-size: 1.6rem;
     color: #222;
   }
-
   .nav-menu {
     display: none;
   }
-
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -185,27 +142,23 @@ button:hover {
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
   }
-
   .nav-menu.active {
     left: 0;
     opacity: 1;
     z-index: -1;
     transition: all 0.3s ease-in-out;
   }
-
   .nav-links {
     display: block;
     width: 100%;
     font-size: 1.2rem;
     padding: 1rem 0;
   }
-
   .nav-links:hover {
     background: #01959a;
     color: #fff;
     transition: none;
   }
-
   .submenu {
     position: static;
     background: none;
@@ -213,20 +166,12 @@ button:hover {
     padding: 0;
     margin: 0;
   }
-
   .submenu li {
     padding: 0;
   }
-
   .submenu li a {
     font-size: 1.2rem;
-    /* padding: 10px; */
   }
-
-  button {
-    display: none;
-  }
-
   .nav-links-mobile {
     display: block;
     padding: 1.5rem;

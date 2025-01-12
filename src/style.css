@@ -1,10 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Kavivanar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap"); */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,13 +10,87 @@ html {
 }
 body {
   overflow-x: hidden;
-  /* font-family: "Alata", cursive; */
-  /* font-family: "Dancing Script", cursive; */
-  /* font-family: "Kavivanar", cursive; */
-  /* font-family: "Merriweather", serif; */
-  /* font-family: "Rochester", cursive; */
-  /* font-family: "Sacramento", cursive; */
-  /* font-family: "Ubuntu", sans-serif; */
-  /* font-family: "Quicksand", sans-serif; */
   font-family: "Noto Sans", sans-serif;
+}
+.CookieConsent {
+  background: #2b373b !important;
+  color: #ffffff !important;
+  text-align: center;
+  padding: 20px !important;
+  font-size: 18px !important;
+  border-top: 1px solid #3e3e3e !important;
+}
+.CookieConsent a {
+  color: #c2ffc4 !important;
+  text-decoration: none !important;
+}
+.CookieConsent a:hover {
+  text-decoration: underline !important;
+}
+.CookieConsent button {
+  background: #4caf50 !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  margin-left: 10px !important;
+  cursor: pointer !important;
+  border-radius: 5px !important;
+  font-size: 14px !important;
+}
+.CookieConsent button:hover {
+  background: #45a049 !important;
+}
+.CookieConsent .declineButton {
+  background: #f44336 !important;
+  color: white !important;
+}
+.CookieConsent .declineButton:hover {
+  background: #da190b !important;
+}
+.privacy-policy-content {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Noto Sans", sans-serif;
+  color: #333;
+}
+.privacy-policy-content h2 {
+  color: #1c3d5a;
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #4caf50;
+  padding-bottom: 10px;
+}
+.privacy-policy-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.privacy-policy-content h3 {
+  color: #4caf50;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.privacy-policy-content a {
+  color: #4caf50;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .CookieConsent {
+    font-size: 16px !important;
+    text-align: left;
+  }
+  .privacy-policy-content {
+    padding: 20px;
+  }
+  .privacy-policy-content h2 {
+    font-size: 24px;
+  }
+  .privacy-policy-content h3 {
+    font-size: 20px;
+  }
+  .privacy-policy-content p {
+    font-size: 14px;
+  }
 }
