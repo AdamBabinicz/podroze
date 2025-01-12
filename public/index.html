@@ -56,5 +56,74 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script type="application/ld+json">
+      {`
+        {
+          "@context": "http://schema.org",
+          "@type": "GroupOfPeople",
+          "name": "Grupa Podróżników",
+          "members": [
+            {
+              "@type": "Person",
+              "name": "Gosia",
+              "url": "https://podroze-gosi.netlify.app",
+              "image": "https://podroze-gosi.netlify.app/12.avif",
+              "sameAs": "https://www.instagram.com/jankowalski"
+            },
+          ],
+          "memberOf": {
+            "@type": "Organization",
+            "name": "Miejsca Net",
+            "url": "https://miejsca.net.pl"
+          },
+          "event": [
+            {
+              "@type": "Event",
+              "name": "Podróż do Armenii",
+              "startDate": "2022-05-01T00:00:00Z",
+              "endDate": "2022-05-30T23:59:59Z",
+              "location": {
+                "@type": "Place",
+                "name": "Armenia",
+                "address": "Armenia - różne lokalizacje"
+              }
+            },
+            {
+              "@type": "Event",
+              "name": "Podróż do Wietnamu i Kambodży",
+              "startDate": "2023-09-01T00:00:00Z",
+              "endDate": "2023-09-31T23:59:59Z",
+              "location": {
+                "@type": "Place",
+                "name": "Wietnam",
+                "address": "Wietnam - różne lokalizacje"
+              }
+            },
+            {
+              "@type": "Event",
+              "name": "Podróż do Republiki Południowej Afryki",
+              "startDate": "2024-12-01T00:00:00Z",
+              "endDate": "2024-12-31T23:59:59Z",
+              "location": {
+                "@type": "Place",
+                "name": "Republika Południowej Afryki",
+                "address": "RPA - różne lokalizacje"
+              }
+            },
+            {
+              "@type": "Event",
+              "name": "Przyszłe podróże na wszystkie kontynenty",
+              "startDate": "2025-01-01T00:00:00Z",
+              "endDate": "2025-12-31T23:59:59Z",
+              "location": {
+                "@type": "Place",
+                "name": "Różne miejsca na wszystkich kontynentach",
+                "address": "Planowane podróże do różnych lokalizacji na całym świecie"
+              }
+            }
+          ]
+        }
+      `}
+    </script>
   </body>
 </html>

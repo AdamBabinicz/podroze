@@ -28,7 +28,7 @@ const Footer = () => {
             <FaTwitter />
           </a>
           <a
-            href="https://insagram.com"
+            href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Zobacz na Instagramie (otworzy się w nowym oknie)"
