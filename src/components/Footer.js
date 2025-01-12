@@ -15,6 +15,7 @@ const Footer = () => {
             href="https://www.facebook.com/profile.php?id=100005885345130"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Odwiedź mnie na Facebooku (otworzy się w nowym oknie)"
           >
             <FaFacebook />
           </a>
@@ -22,13 +23,15 @@ const Footer = () => {
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Zobacz na Twitter (otworzy się w nowym oknie)"
           >
             <FaTwitter />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://insagram.com"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Zobacz na Instagramie (otworzy się w nowym oknie)"
           >
             <FaInstagram />
           </a>
