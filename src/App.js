@@ -16,9 +16,9 @@ export default function App() {
   const navigate = useNavigate();
 
   const handlePrivacyPolicyClick = (event) => {
-    event.preventDefault(); // Zapobiega domyślnemu odświeżeniu strony
-    navigate("/privacypolicy"); // Przekierowanie do strony Polityka Prywatności
-    document.querySelector(".CookieConsent").style.display = "none"; // Ukrycie paska ciasteczek
+    event.preventDefault();
+    navigate("/privacypolicy");
+    document.querySelector(".CookieConsent").style.display = "none";
   };
 
   return (
