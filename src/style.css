@@ -12,21 +12,36 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 .CookieConsent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background: #2b373b !important;
   color: #ffffff !important;
   text-align: center;
   padding: 20px !important;
   font-size: 18px !important;
   border-top: 1px solid #3e3e3e !important;
+  font-display: swap; /* Wymusza poprawne ładowanie czcionek */
+  z-index: 1000; /* Wysoki z-index, aby element był na wierzchu */
+  height: auto; /* Pozwalamy na dynamiczną wysokość */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box; /* Uwzględniamy padding w obliczeniach szerokości */
+  line-height: 1.5; /* Zwiększenie interlinii, aby tekst miał więcej przestrzeni */
 }
+
 .CookieConsent a {
   color: #c2ffc4 !important;
   text-decoration: none !important;
   font-size: 20px;
 }
+
 .CookieConsent a:hover {
   text-decoration: underline !important;
 }
+
 .CookieConsent button {
   background: #28602a !important;
   color: white !important;
@@ -37,16 +52,20 @@ body {
   border-radius: 5px !important;
   font-size: 14px !important;
 }
+
 .CookieConsent button:hover {
   background: #45a049 !important;
 }
+
 .CookieConsent .declineButton {
   background: #f44336 !important;
   color: white !important;
 }
+
 .CookieConsent .declineButton:hover {
   background: #da190b !important;
 }
+
 .privacy-policy-content {
   padding: 40px;
   max-width: 800px;
@@ -54,6 +73,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   color: #333;
 }
+
 .privacy-policy-content h2 {
   color: #1c3d5a;
   font-size: 28px;
@@ -61,35 +81,46 @@ body {
   border-bottom: 3px solid #4caf50;
   padding-bottom: 10px;
 }
+
 .privacy-policy-content p {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
+
 .privacy-policy-content h3 {
   color: #4caf50;
   font-size: 22px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
 .privacy-policy-content a {
   color: #4caf50;
   text-decoration: none;
 }
+
 @media (max-width: 768px) {
   .CookieConsent {
     font-size: 16px !important;
     text-align: left;
+    padding: 10px 15px !important; /* Dostosowanie paddingu na urządzenia mobilne */
+    height: auto; /* Pozwalamy na dynamiczną wysokość */
+    line-height: 1.4; /* Zmniejszenie interlinii na mniejszych ekranach */
   }
+
   .privacy-policy-content {
     padding: 20px;
   }
+
   .privacy-policy-content h2 {
     font-size: 24px;
   }
+
   .privacy-policy-content h3 {
     font-size: 20px;
   }
+
   .privacy-policy-content p {
     font-size: 14px;
   }
