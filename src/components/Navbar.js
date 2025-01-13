@@ -19,11 +19,11 @@ function Navbar() {
 
   return (
     <nav className="NavbarItems">
-      <h1 className="navbar-logo">
-        <GiElephant />
-        <span>Podróże egzotyczne</span>
-        <GiSandSnake />
-      </h1>
+      <a href="/" className="navbar-logo">
+        <GiElephant aria-hidden="true" />
+        <h1>Podróże egzotyczne</h1>
+        <GiSandSnake aria-hidden="true" />
+      </a>
 
       {/* Hamburger menu */}
       <div className="menu-icons" onClick={toggleMenu}>

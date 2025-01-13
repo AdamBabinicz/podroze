@@ -44,6 +44,9 @@
   .trip {
     margin: 4rem 2rem;
   }
+  .trip h2 {
+    font-size: 2rem;
+  }
   .tripcard {
     flex-direction: column;
   }

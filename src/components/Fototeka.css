@@ -1,6 +1,6 @@
 .fototeka-container {
   max-width: 1000px;
-  min-height: 100vh;
+  height: 100vh !important;
   margin: 8rem auto;
   padding: 20px;
   text-align: center;
@@ -28,14 +28,14 @@
   display: block;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
   .fototeka-container {
     margin: 6rem auto;
+    height: 100% !important;
   }
   .fototeka-image {
     object-fit: cover;
     width: 100%;
-    max-height: auto;
-    height: 500px;
+    height: 100%;
   }
 }

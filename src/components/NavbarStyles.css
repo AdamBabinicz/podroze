@@ -16,13 +16,18 @@
 }
 .navbar-logo {
   color: #222;
-  font-size: 2rem;
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
-.navbar-logo span {
+.navbar-logo h1 {
+  font-size: 2rem;
   margin: 0 1rem;
+}
+.navbar-logo svg {
+  font-size: 2rem;
 }
 .nav-menu {
   display: grid;
@@ -106,9 +111,13 @@ button:hover {
   background: #01959a;
   color: #fff;
 }
-@media (max-width: 768px) {
-  .navbar-logo span {
+@media (max-width: 1025px) {
+  .navbar-logo h1 {
     font-size: 1.2rem;
+    margin: 0;
+  }
+  .navbar-logo svg {
+    font-size: 1.4rem;
   }
   .NavbarItems {
     z-index: 99;

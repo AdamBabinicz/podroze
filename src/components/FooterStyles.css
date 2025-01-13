@@ -32,7 +32,7 @@
   text-align: start;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .bottom div {
   display: flex;
@@ -54,6 +54,9 @@
   }
   .footer svg {
     margin: 1rem 1rem 0 0;
+  }
+  .bottom {
+    flex-wrap: wrap;
   }
   .bottom div {
     width: 50%;
