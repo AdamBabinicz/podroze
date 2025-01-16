@@ -1,14 +1,14 @@
 import "./TripStyles.css";
 import TripData from "./TripData";
 import Trip1 from "../assets/ameryka/1.avif";
-import Trip2 from "../assets/ameryka/3.avif";
-import Trip3 from "../assets/australia/1.avif";
+import Trip2 from "../assets/ameryka/4.avif";
+import Trip3 from "../assets/ameryka/2.avif";
 
 function Trip() {
   return (
     <div className="trip">
       <h2>Podróże planowane</h2>
-      <p>Ameryka Południowa, Australia</p>
+      <p>Ameryka Południowa i Północnaa</p>
       <div className="tripcard">
         <TripData
           image={Trip1}
@@ -17,13 +17,13 @@ function Trip() {
         />
         <TripData
           image={Trip2}
-          heading="Argentyna"
-          text="Argentyna to kraj o niezwykłej różnorodności krajobrazów i atrakcji. W Patagonii można podziwiać majestatyczne lodowce, takie jak Perito Moreno, oraz zapierające dech w piersiach góry Andów. Z kolei w Buenos Aires, tętniącym życiem stolicy, warto zanurzyć się w atmosferze tango, odwiedzając lokalne milongi, a w Mendoza czeka na turystów światowej sławy winiarstwo, oferujące niezapomniane degustacje."
+          heading="Peru"
+          text="Peru to kraj pełen tajemnic i zapierających dech w piersiach krajobrazów, który zachwyci każdego podróżnika. Możesz odkrywać starożytne ruiny Machu Picchu, spacerować po kolorowych uliczkach Cuzco lub podziwiać niezwykłe linie Nazca. Przyroda Amazonii i majestatyczne Andy czekają na Ciebie, oferując niezapomniane przygody. Pozwól sobie na kulinarną ucztę z tradycyjnymi peruwiańskimi potrawami i poczuj magię tego wyjątkowego miejsca!"
         />
         <TripData
           image={Trip3}
-          heading="Australia"
-          text="Australia to kraj, który zachwyca swoim niezwykłym połączeniem dzikiej przyrody i nowoczesnych miast. Great Barrier Reef, największa rafa koralowa na świecie, przyciąga miłośników nurkowania, oferując niepowtarzalne widoki podwodnego świata. Z kolei Sydney, z ikoniczną Operą i mostem Harbour Bridge, oraz dzikie obszary Outbacku to miejsca, które odkrywają niepowtarzalny charakter tego kontynentu."
+          heading="Meksyk"
+          text="Meksyk to kraj pełen kontrastów, gdzie historia przeplata się z nowoczesnością, a krajobrazy zapierają dech w piersiach. Odkryj starożytne miasta Majów i Azteków, takie jak Chichén Itzá czy Teotihuacán, które przeniosą Cię w czasy wielkich cywilizacji. Zachwyć się białymi plażami w Cancún, turkusowymi wodami cenot i malowniczymi pustyniami. Meksykańska kuchnia, z tacos, enchiladami i aromatyczną tequilą, z pewnością dostarczy Ci niezapomnianych smakowych doznań."
         />
       </div>
     </div>
